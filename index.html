@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f7e4e1" />
+  <title>Happy Birthday, Dinda</title>
+  <meta name="description" content="A birthday celebration for Dinda Ayu Rizky Aulia — 26 September 2026" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="fx"></canvas>
+
+  <!-- Opening envelope -->
+  <div id="intro">
+    <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open your birthday letter">
+      <div class="env-back"></div>
+      <div class="env-card"><span class="script">For you</span></div>
+      <div class="env-front"></div>
+      <div class="env-flap"></div>
+      <div class="seal">♥</div>
+    </div>
+    <p class="intro-to">To my dearest</p>
+    <h2 class="script intro-name" data-name></h2>
+    <p class="tap">Tap to open 💌</p>
+  </div>
+
+  <button id="musicBtn" aria-label="Pause music" hidden>
+    <span class="bars"><i></i><i></i><i></i></span>
+  </button>
+
+  <main id="site" hidden>
+    <section class="hero">
+      <p class="eyebrow reveal">26 · September · 2026</p>
+      <h1 class="script reveal">Happy Birthday</h1>
+      <h2 class="hero-name reveal" data-fullname></h2>
+      <div class="divider reveal"><span>♥</span></div>
+      <p class="hero-sub reveal">To the love of my life</p>
+      <div class="scroll-hint">scroll<br />↓</div>
+    </section>
+
+    <section class="counter-sec">
+      <p class="eyebrow reveal" id="counterLabel"></p>
+      <div class="counter reveal" id="counter"></div>
+    </section>
+
+    <section>
+      <h2 class="section-title script reveal">Our Story</h2>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <section>
+      <h2 class="section-title script reveal">Our Moments</h2>
+      <p class="section-sub reveal">Tap a photo to see it closer</p>
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <section class="letter-sec">
+      <div class="letter reveal" id="letter">
+        <div class="letter-body" id="letterBody"></div>
+        <p class="signature"><span id="signature"></span><br /><span class="script" data-from></span></p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title script reveal">Reasons I Love You</h2>
+      <p class="section-sub reveal">Tap each card</p>
+      <div class="reasons" id="reasons"></div>
+    </section>
+
+    <section class="cake-sec">
+      <h2 class="section-title script reveal">Make a Wish</h2>
+      <p class="section-sub reveal" id="cakeHint">Close your eyes, make a wish, then tap the candles</p>
+      <div class="cake reveal" id="cake" role="button" tabindex="0" aria-label="Blow out the candles">
+        <div class="candles"></div>
+        <div class="tier t3"></div><div class="tier t2"></div><div class="tier t1"></div>
+        <div class="plate"></div>
+      </div>
+      <p class="wish script" id="wish" hidden>May all your wishes come true ✨</p>
+    </section>
+
+    <section class="secret-sec">
+      <div class="lock reveal">🔒</div>
+      <h2 class="section-title script reveal">A Secret, Just for You</h2>
+      <form id="secretForm" class="reveal" autocomplete="off">
+        <p class="section-sub" id="secretHint"></p>
+        <input id="secretInput" inputmode="numeric" placeholder="••••" aria-label="Secret password" />
+        <button type="submit">Unlock</button>
+        <p class="err" id="secretErr" hidden>Not quite, my love — try again 💕</p>
+      </form>
+      <div class="secret-msg" id="secretMsg" hidden></div>
+    </section>
+
+    <footer>
+      <p class="script forever">I will always love you, forever.</p>
+      <p class="small">Made with all my love · 26.09.2026</p>
+    </footer>
+  </main>
+
+  <div id="lightbox" hidden>
+    <button class="lb-close" aria-label="Close">×</button>
+    <button class="lb-nav prev" aria-label="Previous">‹</button>
+    <img alt="" />
+    <p class="lb-cap"></p>
+    <button class="lb-nav next" aria-label="Next">›</button>
+  </div>
+
+  <audio id="bgm" loop preload="auto"></audio>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
