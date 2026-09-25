@@ -10,12 +10,19 @@ window.SITE = {
   // Put your song at music/song.mp3. Until then, a soft music-box melody plays instead.
   music: "music/song.mp3",
 
-  // Photos: drop photo files named 1.jpg … 20.jpg into /photos.
-  // Captions are optional; the first 5 also appear on the "Our Story" timeline.
-  photos: Array.from({ length: 20 }, (_, i) => ({
-    src: `photos/${i + 1}.jpg`,
-    caption: "",
-  })),
+  // Photos live in /photos (1.jpg, 2.jpg …). To add more, drop in 9.jpg, 10.jpg… and add a line here.
+  // Photos 1–5 also illustrate the "Our Story" timeline, in order.
+  heroPhoto: "photos/4.jpg",
+  photos: [
+    { src: "photos/1.jpg", caption: "You and me, side by side" },
+    { src: "photos/2.jpg", caption: "My favourite place: right next to you" },
+    { src: "photos/3.jpg", caption: "That soft, gentle smile" },
+    { src: "photos/4.jpg", caption: "My favourite view in the world" },
+    { src: "photos/5.jpg", caption: "Dreaming under open skies" },
+    { src: "photos/6.jpg", caption: "Blooming, just like you" },
+    { src: "photos/7.jpg", caption: "My beautiful, brilliant girl" },
+    { src: "photos/8.jpg", caption: "The look that stole my heart" },
+  ],
 
   timeline: [
     { title: "The Day We Met", text: "The day my whole world quietly changed its centre." },
@@ -62,6 +69,7 @@ window.SITE = {
 
   // Secret message: unlocked with the password below (not case-sensitive).
   secret: {
+    photo: "photos/2.jpg",
     hint: "Your birthday — day & month (DDMM)",
     password: "2609",
     message: [

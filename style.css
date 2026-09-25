@@ -88,7 +88,9 @@ section { padding: 80px 20px; max-width: 720px; margin: 0 auto; text-align: cent
 .reveal.in { opacity: 1; transform: none; }
 
 .hero { min-height: 100svh; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; }
-.hero h1 { font-size: clamp(64px, 20vw, 120px); color: var(--rose-deep); line-height: 1; margin: 16px 0 8px; text-shadow: 0 2px 20px rgba(217,140,140,.3); }
+.hero-photo { width: 150px; height: 150px; border-radius: 50%; padding: 5px; margin-bottom: 22px; background: conic-gradient(from 200deg, var(--gold), #f2d7a0, var(--rose), var(--gold)); box-shadow: 0 10px 30px rgba(181,96,106,.25); }
+.hero-photo img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: 50% 30%; border: 3px solid var(--cream); display: block; }
+.hero h1 { font-size: clamp(60px, 18vw, 120px); color: var(--rose-deep); line-height: 1; margin: 12px 0 8px; text-shadow: 0 2px 20px rgba(217,140,140,.3); }
 .hero-name { font-weight: 600; font-size: clamp(22px, 6.5vw, 34px); letter-spacing: .04em; }
 .hero-sub { font-style: italic; font-size: 20px; color: var(--soft); }
 .divider { display: flex; align-items: center; gap: 12px; margin: 18px 0; color: var(--gold); }
@@ -177,8 +179,9 @@ section { padding: 80px 20px; max-width: 720px; margin: 0 auto; text-align: cent
 @keyframes shake { 25% { transform: translateX(-8px); } 75% { transform: translateX(8px); } }
 .err { color: var(--rose-deep); margin-top: 10px; }
 .secret-msg { margin-top: 10px; padding: 30px 22px; border-radius: 18px; background: linear-gradient(160deg, #fff, #fbe9e6); box-shadow: 0 10px 30px rgba(181,96,106,.2); animation: bloom 1s ease; }
+.secret-photo { width: 100%; max-width: 360px; aspect-ratio: 4/5; object-fit: cover; border-radius: 12px; border: 6px solid #fff; box-shadow: 0 8px 20px rgba(90,62,65,.18); transform: rotate(-2deg); margin: 0 auto 22px; display: block; }
 .secret-msg p { font-size: 19px; line-height: 1.6; margin-bottom: 14px; }
-.secret-msg p:first-child { font-family: "Great Vibes", cursive; font-size: 34px; color: var(--rose-deep); }
+.secret-msg p:first-of-type { font-family: "Great Vibes", cursive; font-size: 34px; color: var(--rose-deep); }
 .secret-msg p:last-child { font-style: italic; font-weight: 600; color: var(--rose-deep); margin: 0; }
 @keyframes bloom { from { opacity: 0; transform: scale(.9); } }
 

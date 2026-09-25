@@ -8,6 +8,7 @@
   document.querySelectorAll("[data-fullname]").forEach(e => (e.textContent = S.name));
   document.querySelectorAll("[data-from]").forEach(e => (e.textContent = S.from));
   $("#signature").textContent = S.signature;
+  if (S.heroPhoto) $("#heroImg").src = S.heroPhoto; else $(".hero-photo").remove();
   $("#secretHint").textContent = "Hint: " + S.secret.hint;
 
   // ── Photos (placeholder shown until real photos are added) ──
@@ -212,7 +213,7 @@
     const inp = $("#secretInput");
     if (inp.value.trim().toLowerCase() === String(S.secret.password).toLowerCase()) {
       $("#secretForm").hidden = true; $(".lock").textContent = "🔓";
-      const m = $("#secretMsg"); m.innerHTML = S.secret.message.map(t => `<p>${t}</p>`).join(""); m.hidden = false;
+      const m = $("#secretMsg"); m.innerHTML = (S.secret.photo ? `<img class="secret-photo" src="${S.secret.photo}" alt="Us" />` : "") + S.secret.message.map(t => `<p>${t}</p>`).join(""); m.hidden = false;
       const r = m.getBoundingClientRect(); burst(innerWidth / 2, Math.max(80, r.top), 180);
     } else {
       $("#secretErr").hidden = false; inp.classList.remove("shake"); void inp.offsetWidth; inp.classList.add("shake"); inp.value = "";
