@@ -10,7 +10,7 @@ window.SITE = {
   // Put your song at music/song.mp3. Until then, a soft music-box melody plays instead.
   music: "music/song.mp3",
 
-  // Photos live in /photos (1.jpg, 2.jpg …). To add more, drop in 14.jpg, 15.jpg… and add a line here.
+  // Photos live in /photos (1.jpg, 2.jpg …). To add more, drop in 19.jpg, 20.jpg… and add a line here.
   // Photos 1–5 also illustrate the "Our Story" timeline, in order.
   heroPhoto: "photos/4.jpg",
   photos: [
@@ -24,9 +24,14 @@ window.SITE = {
     { src: "photos/8.jpg", caption: "Wherever you are is home" },
     { src: "photos/9.jpg", caption: "Our little dates, our biggest joys" },
     { src: "photos/10.jpg", caption: "Simply beautiful" },
-    { src: "photos/11.jpg", caption: "Blooming, just like you" },
-    { src: "photos/12.jpg", caption: "My beautiful, brilliant girl" },
-    { src: "photos/13.jpg", caption: "The look that stole my heart" },
+    { src: "photos/11.jpg", caption: "Sunshine in a pink hijab" },
+    { src: "photos/12.jpg", caption: "Your smile on my shoulder" },
+    { src: "photos/13.jpg", caption: "Two of us, one heart" },
+    { src: "photos/14.jpg", caption: "Adventures at Pasar Kangen" },
+    { src: "photos/15.jpg", caption: "Happiest with snacks in hand" },
+    { src: "photos/16.jpg", caption: "Blooming, just like you" },
+    { src: "photos/17.jpg", caption: "My beautiful, brilliant girl" },
+    { src: "photos/18.jpg", caption: "The look that stole my heart" },
   ],
 
   timeline: [
