@@ -10,7 +10,7 @@ window.SITE = {
   // Put your song at music/song.mp3. Until then, a soft music-box melody plays instead.
   music: "music/song.mp3",
 
-  // Photos live in /photos (1.jpg, 2.jpg …). To add more, drop in 9.jpg, 10.jpg… and add a line here.
+  // Photos live in /photos (1.jpg, 2.jpg …). To add more, drop in 14.jpg, 15.jpg… and add a line here.
   // Photos 1–5 also illustrate the "Our Story" timeline, in order.
   heroPhoto: "photos/4.jpg",
   photos: [
@@ -19,9 +19,14 @@ window.SITE = {
     { src: "photos/3.jpg", caption: "That soft, gentle smile" },
     { src: "photos/4.jpg", caption: "My favourite view in the world" },
     { src: "photos/5.jpg", caption: "Dreaming under open skies" },
-    { src: "photos/6.jpg", caption: "Blooming, just like you" },
-    { src: "photos/7.jpg", caption: "My beautiful, brilliant girl" },
-    { src: "photos/8.jpg", caption: "The look that stole my heart" },
+    { src: "photos/6.jpg", caption: "Stolen kisses and silly faces" },
+    { src: "photos/7.jpg", caption: "Cosy days, sweetest smile" },
+    { src: "photos/8.jpg", caption: "Wherever you are is home" },
+    { src: "photos/9.jpg", caption: "Our little dates, our biggest joys" },
+    { src: "photos/10.jpg", caption: "Simply beautiful" },
+    { src: "photos/11.jpg", caption: "Blooming, just like you" },
+    { src: "photos/12.jpg", caption: "My beautiful, brilliant girl" },
+    { src: "photos/13.jpg", caption: "The look that stole my heart" },
   ],
 
   timeline: [
@@ -69,7 +74,7 @@ window.SITE = {
 
   // Secret message: unlocked with the password below (not case-sensitive).
   secret: {
-    photo: "photos/2.jpg",
+    photo: "photos/6.jpg",
     hint: "Your birthday — day & month (DDMM)",
     password: "2609",
     message: [

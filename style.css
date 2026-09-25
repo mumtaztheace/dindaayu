@@ -179,7 +179,7 @@ section { padding: 80px 20px; max-width: 720px; margin: 0 auto; text-align: cent
 @keyframes shake { 25% { transform: translateX(-8px); } 75% { transform: translateX(8px); } }
 .err { color: var(--rose-deep); margin-top: 10px; }
 .secret-msg { margin-top: 10px; padding: 30px 22px; border-radius: 18px; background: linear-gradient(160deg, #fff, #fbe9e6); box-shadow: 0 10px 30px rgba(181,96,106,.2); animation: bloom 1s ease; }
-.secret-photo { width: 100%; max-width: 360px; aspect-ratio: 4/5; object-fit: cover; border-radius: 12px; border: 6px solid #fff; box-shadow: 0 8px 20px rgba(90,62,65,.18); transform: rotate(-2deg); margin: 0 auto 22px; display: block; }
+.secret-photo { width: 100%; max-width: 360px; aspect-ratio: 1; object-fit: cover; object-position: 50% 15%; border-radius: 12px; border: 6px solid #fff; box-shadow: 0 8px 20px rgba(90,62,65,.18); transform: rotate(-2deg); margin: 0 auto 22px; display: block; }
 .secret-msg p { font-size: 19px; line-height: 1.6; margin-bottom: 14px; }
 .secret-msg p:first-of-type { font-family: "Great Vibes", cursive; font-size: 34px; color: var(--rose-deep); }
 .secret-msg p:last-child { font-style: italic; font-weight: 600; color: var(--rose-deep); margin: 0; }
