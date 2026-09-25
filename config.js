@@ -11,7 +11,7 @@ window.SITE = {
   music: "music/song.mp3",
 
   // Photos live in /photos (1.jpg … 18.jpg). To add more, drop in 19.jpg… and add a line here.
-  heroPhoto: "photos/4.jpg",
+  heroPhoto: "photos/hero.jpg",
   photos: [
     { src: "photos/1.jpg", caption: "You and me, side by side" },
     { src: "photos/2.jpg", caption: "My favourite place: right next to you" },
