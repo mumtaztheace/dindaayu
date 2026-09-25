@@ -7,11 +7,10 @@ window.SITE = {
   from: "Mumtaz Tuasikal",
   birthday: "2026-09-26T00:00:00+07:00", // WIB
 
-  // "Ku Ingin Kau Tahu" — The Overtunes. If the file is missing, a soft music-box melody plays instead.
+  // "Ku Ingin Kau Tahu" by The Overtunes. If the file is missing, a soft music-box melody plays instead.
   music: "music/song.mp3",
 
   // Photos live in /photos (1.jpg … 18.jpg). To add more, drop in 19.jpg… and add a line here.
-  // Photos 1–5 also illustrate the "Our Story" timeline, in order.
   heroPhoto: "photos/4.jpg",
   photos: [
     { src: "photos/1.jpg", caption: "You and me, side by side" },
@@ -34,21 +33,22 @@ window.SITE = {
     { src: "photos/18.jpg", caption: "The look that stole my heart" },
   ],
 
+  // "Our Story" timeline, each with its own photo in photos/story.
   timeline: [
-    { title: "The Day We Met", text: "The day my whole world quietly changed its centre." },
-    { title: "Our First Date", text: "Nervous hearts, endless conversation, and a smile I couldn't forget." },
-    { title: "Falling in Love", text: "Somewhere between the ordinary days, you became my everything." },
-    { title: "Forever Begins", text: "I promised you my always — and I meant every word." },
-    { title: "Today", text: "Still choosing you. Every day, every moment, forever." },
+    { photo: "photos/story/1.jpg", title: "The Day We Met", text: "The day my whole world quietly changed its centre." },
+    { photo: "photos/story/2.jpg", title: "Our First Date", text: "Nervous hearts, endless conversation, and a smile I couldn't forget." },
+    { photo: "photos/story/3.jpg", title: "Falling in Love", text: "Somewhere between the ordinary days, you became my everything." },
+    { photo: "photos/story/4.jpg", title: "Forever Begins", text: "I promised you my always, and I meant every word." },
+    { photo: "photos/story/5.jpg", title: "Today", text: "Still choosing you. Every day, every moment, forever." },
   ],
 
   letter: [
     "My dearest Dinda,",
-    "Happy birthday, my love. Today the world celebrates the day it was given you — and I celebrate the greatest gift my life has ever received.",
+    "Happy birthday, my love. Today the world celebrates the day it was given you, and I celebrate the greatest gift my life has ever received.",
     "You are my morning light and my calm at the end of every day. Your laugh is my favourite song, your hand in mine is my favourite place, and your heart is the home I never want to leave.",
     "Thank you for your patience, your warmth, your endless kindness, and for loving me even on the days I don't make it easy. Every year with you is better than the last, and I can't wait to see all the beautiful things this new year brings you.",
     "May this year give you everything your heart has been quietly wishing for. And whatever comes, know this: I will be right beside you, holding your hand.",
-    "I love you today, I will love you tomorrow, and I will love you forever — in this life and in every one after it.",
+    "I love you today, I will love you tomorrow, and I will love you forever. In this life and in every one after it.",
   ],
   signature: "Forever yours,",
 
@@ -80,13 +80,22 @@ window.SITE = {
   // Secret message: unlocked with the password below (not case-sensitive).
   secret: {
     photo: "photos/6.jpg",
-    hint: "Your birthday — day & month (DDMM)",
+    hint: "Your birthday: day & month (DDMM)",
     password: "2609",
     message: [
       "You found it, my love. 🤍",
-      "If I could give you one thing, it would be the ability to see yourself through my eyes — only then would you know how truly special you are.",
+      "If I could give you one thing, it would be the ability to see yourself through my eyes. Only then would you know how truly special you are.",
       "No matter how many years pass, no matter where life takes us, my heart has only one answer: you. Always you.",
-      "I will always love you. Forever and ever, until the stars burn out — and even then.",
+      "I will always love you. Forever and ever, until the stars burn out, and even then.",
     ],
+    // Gift voucher shown after unlocking.
+    gift: {
+      label: "A gift for you",
+      title: "Free Romantic Dinner",
+      date: "Saturday, 26 September 2026",
+      time: "7:00 PM",
+      note: "Just you and me. Dress up, my love, and leave the rest to me.",
+      from: "Mumtaz",
+    },
   },
 };

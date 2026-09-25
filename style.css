@@ -185,6 +185,23 @@ section { padding: 80px 20px; max-width: 720px; margin: 0 auto; text-align: cent
 .secret-msg p:last-child { font-style: italic; font-weight: 600; color: var(--rose-deep); margin: 0; }
 @keyframes bloom { from { opacity: 0; transform: scale(.9); } }
 
+/* Gift voucher */
+.gift { margin-top: 34px; animation: bloom 1s .6s ease both; }
+.gift-label { font: 500 12px Montserrat, sans-serif; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+.ticket {
+  position: relative; padding: 28px 24px; border-radius: 16px; color: #fff;
+  background: linear-gradient(135deg, var(--rose), var(--rose-deep));
+  box-shadow: 0 12px 30px rgba(181,96,106,.35);
+  outline: 1.5px dashed rgba(255,255,255,.7); outline-offset: -10px;
+}
+.ticket::before, .ticket::after { content: ""; position: absolute; top: 50%; width: 26px; height: 26px; margin-top: -13px; border-radius: 50%; background: var(--blush); }
+.ticket::before { left: -13px; } .ticket::after { right: -13px; }
+.gift-title { font-size: 44px; line-height: 1.1; }
+.gift-when { font: 500 13px Montserrat, sans-serif; letter-spacing: .02em; white-space: nowrap; margin: 14px 0; padding: 10px 22px; display: inline-block; border: 1px solid rgba(255,255,255,.6); border-radius: 18px; }
+.gift-when b { display: block; font-size: 24px; font-weight: 500; letter-spacing: .12em; margin-top: 4px; }
+.gift-note { font-size: 18px; font-style: italic; }
+.gift-from { font: 300 11px Montserrat, sans-serif; letter-spacing: .15em; text-transform: uppercase; margin-top: 14px; opacity: .9; }
+
 footer { text-align: center; padding: 60px 20px calc(90px + env(safe-area-inset-bottom)); }
 .forever { font-size: 42px; color: var(--rose-deep); }
 .small { font: 300 11px Montserrat, sans-serif; letter-spacing: .2em; color: var(--soft); margin-top: 10px; }

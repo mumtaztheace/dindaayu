@@ -15,11 +15,11 @@
   const tints = ["#f2c9c4", "#e9b7b2", "#f6d9cf", "#eec1c8", "#f3d4c2"];
   const placeholder = i => "data:image/svg+xml," + encodeURIComponent(
     `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${tints[i % 5]}"/><stop offset="1" stop-color="#fffaf5"/></linearGradient></defs><rect width="600" height="750" fill="url(#g)"/><text x="300" y="370" font-size="90" text-anchor="middle" fill="#b5606a" opacity=".5">♥</text><text x="300" y="440" font-size="28" font-family="Georgia" text-anchor="middle" fill="#8c6f72">Photo ${i + 1}</text></svg>`);
-  const img = (i, alt) => {
+  const img = (i, alt, src = S.photos[i].src) => {
     const im = new Image();
     im.loading = "lazy"; im.decoding = "async"; im.alt = alt || `Photo ${i + 1}`;
     im.onerror = () => { im.onerror = null; im.src = placeholder(i); };
-    im.src = S.photos[i].src;
+    im.src = src;
     return im;
   };
 
@@ -27,7 +27,7 @@
   const tl = $("#timeline");
   S.timeline.forEach((t, i) => {
     const li = el("li", "reveal");
-    if (S.photos[i]) li.append(img(i, t.title));
+    if (t.photo) li.append(img(i, t.title, t.photo));
     li.append(el("h3", null, t.title), el("p", null, t.text));
     tl.append(li);
   });
@@ -215,6 +215,12 @@
       $("#secretForm").hidden = true; $(".lock").textContent = "🔓";
       const m = $("#secretMsg"); m.innerHTML = (S.secret.photo ? `<img class="secret-photo" src="${S.secret.photo}" alt="Us" />` : "") + S.secret.message.map(t => `<p>${t}</p>`).join(""); m.hidden = false;
       const r = m.getBoundingClientRect(); burst(innerWidth / 2, Math.max(80, r.top), 180);
+      const g = S.secret.gift;
+      if (g) {
+        const gift = $("#gift");
+        gift.innerHTML = `<p class="gift-label">🎁 ${g.label}</p><div class="ticket"><p class="gift-title script">${g.title}</p><p class="gift-when">${g.date}<b>${g.time}</b></p><p class="gift-note">${g.note}</p><p class="gift-from">Valid for one. With love, ${g.from} ♥</p></div>`;
+        gift.hidden = false;
+      }
     } else {
       $("#secretErr").hidden = false; inp.classList.remove("shake"); void inp.offsetWidth; inp.classList.add("shake"); inp.value = "";
     }
