@@ -2,10 +2,11 @@
 
 A mobile-first birthday site for **Dinda Ayu Rizky Aulia** — 26 September 2026.
 
-## Personalise
-- **Photos:** add `photos/1.jpg` … `photos/20.jpg` (resize to ~1200px wide for fast loading). Optional captions in `config.js`. Photos 1–5 also appear in "Our Story".
-- **Music:** add `music/song.mp3`. Until then a soft music-box "Happy Birthday" plays.
-- **Texts, timeline, reasons, secret password:** all in `config.js`.
+## What's inside
+- **18 photos** in `photos/` (resized to 1080px), with captions in `config.js`. Photos 1–5 also illustrate "Our Story".
+- **Music:** "Ku Ingin Kau Tahu" by The Overtunes (`music/song.mp3`), starts when the envelope is tapped.
+- **Secret message:** password `2609`.
+- All texts (letter, timeline, reasons, captions, signature) live in `config.js`.
 
 ## Run locally
 `python3 -m http.server` then open http://localhost:8000

@@ -4,13 +4,13 @@
 window.SITE = {
   name: "Dinda Ayu Rizky Aulia",
   shortName: "Dinda",
-  from: "Your Husband",
+  from: "Mumtaz Tuasikal",
   birthday: "2026-09-26T00:00:00+07:00", // WIB
 
-  // Put your song at music/song.mp3. Until then, a soft music-box melody plays instead.
+  // "Ku Ingin Kau Tahu" — The Overtunes. If the file is missing, a soft music-box melody plays instead.
   music: "music/song.mp3",
 
-  // Photos live in /photos (1.jpg, 2.jpg …). To add more, drop in 19.jpg, 20.jpg… and add a line here.
+  // Photos live in /photos (1.jpg … 18.jpg). To add more, drop in 19.jpg… and add a line here.
   // Photos 1–5 also illustrate the "Our Story" timeline, in order.
   heroPhoto: "photos/4.jpg",
   photos: [
